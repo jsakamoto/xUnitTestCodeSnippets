@@ -1,0 +1,20 @@
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
+  <Metadata>
+    <Identity Version="1.0.0.0" Id="d2c46d8d-a104-444a-a1ae-bf620debd2a5" Language="en-US" Publisher="J.Sakamoto" />
+    <DisplayName>xUnit Code Snippets</DisplayName>
+    <Description xml:space="preserve">Code snippets for xUnit test method.</Description>
+    <!-- <MoreInfo>https://github.com/jsakamoto/...</MoreInfo> -->
+    <!-- <GettingStartedGuide>https://github.com/jsakamoto/...</GettingStartedGuide> -->
+    <!-- <ReleaseNotes>https://github.com/jsakamoto/...</ReleaseNotes> -->
+    <Icon>icon.png</Icon>
+    <!-- <PreviewImage>preview.png</PreviewImage> -->
+    <Tags>xunit, Unit Testing, TDD, snippet, snippets, code snippets</Tags>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[11.0,15.0]" />
+  </Installation>
+  <Dependencies></Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="registry.pkgdef" />
+  </Assets>
+</PackageManifest>
