@@ -5,7 +5,7 @@
     <Description xml:space="preserve">Code snippets for xUnit test method.</Description>
     <MoreInfo>https://github.com/jsakamoto/xUnitTestCodeSnippets/</MoreInfo>
     <!-- <GettingStartedGuide>https://github.com/jsakamoto/...</GettingStartedGuide> -->
-    <ReleaseNotes>https://github.com/jsakamoto/xUnitTestCodeSnippets/blob/master/README.md</ReleaseNotes>
+    <ReleaseNotes>https://github.com/jsakamoto/xUnitTestCodeSnippets/blob/master/README.md#release-note</ReleaseNotes>
     <Icon>icon.png</Icon>
     <!-- <PreviewImage>preview.png</PreviewImage> -->
     <Tags>xunit, Unit Testing, TDD, snippet, snippets, code snippets</Tags>
