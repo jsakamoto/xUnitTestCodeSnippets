@@ -109,12 +109,13 @@
       </SnippetTypes>
       <Title>xUnit Asynchronous Fact</Title>
       <Shortcut>afact</Shortcut>
-      <Description>Code snippet for an xUnit test fact</Description>
+      <Description>Code snippet for an asynchronous xUnit test fact</Description>
       <Author>Nate Barbettini</Author>
     </Header>
     <Snippet>
       <Imports>
         <Import>
+          <Namespace>System.Threading.Tasks</Namespace>
           <Namespace>Xunit</Namespace>
         </Import>
       </Imports>
@@ -122,7 +123,7 @@
         <Literal>
           <ID>name</ID>
           <ToolTip>Replace with the name of the fact method</ToolTip>
-          <Default>MyTestMethod</Default>
+          <Default>MyTestMethodAsync</Default>
         </Literal>
       </Declarations>
       <Code Language="csharp">
@@ -175,12 +176,13 @@
       </SnippetTypes>
       <Title>xUnit Asynchronous Theory</Title>
       <Shortcut>atheory</Shortcut>
-      <Description>Code snippet for an xUnit test theory</Description>
+      <Description>Code snippet for an asynchronous xUnit test theory</Description>
       <Author>Nate Barbettini</Author>
     </Header>
     <Snippet>
       <Imports>
         <Import>
+          <Namespace>System.Threading.Tasks</Namespace>
           <Namespace>Xunit</Namespace>
         </Import>
       </Imports>
@@ -188,7 +190,7 @@
         <Literal>
           <ID>name</ID>
           <ToolTip>Replace with the name of the theory</ToolTip>
-          <Default>MyTheory</Default>
+          <Default>MyTheoryAsync</Default>
         </Literal>
       </Declarations>
       <Code Language="csharp">
