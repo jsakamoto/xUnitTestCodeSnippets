@@ -107,6 +107,40 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
+      <Title>xUnit Asynchronous Fact</Title>
+      <Shortcut>afact</Shortcut>
+      <Description>Code snippet for an asynchronous xUnit test fact</Description>
+      <Author>Nate Barbettini</Author>
+    </Header>
+    <Snippet>
+      <Imports>
+        <Import>
+          <Namespace>System.Threading.Tasks</Namespace>
+          <Namespace>Xunit</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>name</ID>
+          <ToolTip>Replace with the name of the fact method</ToolTip>
+          <Default>MyTestMethodAsync</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp">
+        <![CDATA[[Fact]
+      public async Task $name$()
+      {
+          $end$
+      }]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+  
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
       <Title>xUnit Theory</Title>
       <Shortcut>theory</Shortcut>
       <Description>Code snippet for an xUnit test theory</Description>
@@ -128,6 +162,40 @@
       <Code Language="csharp">
         <![CDATA[[Theory]
       public void $name$()
+      {
+          $end$
+      }]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+  
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>xUnit Asynchronous Theory</Title>
+      <Shortcut>atheory</Shortcut>
+      <Description>Code snippet for an asynchronous xUnit test theory</Description>
+      <Author>Nate Barbettini</Author>
+    </Header>
+    <Snippet>
+      <Imports>
+        <Import>
+          <Namespace>System.Threading.Tasks</Namespace>
+          <Namespace>Xunit</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>name</ID>
+          <ToolTip>Replace with the name of the theory</ToolTip>
+          <Default>MyTheoryAsync</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp">
+        <![CDATA[[Theory]
+      public async Task $name$()
       {
           $end$
       }]]>
