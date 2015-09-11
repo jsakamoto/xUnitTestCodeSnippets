@@ -70,7 +70,31 @@ public class MyTestClass
 }
 ```
 
+## and, "async" versions
+
+- `afact`
+
+```csharp
+[Fact]
+public async Task MyTestFact()
+{
+
+}
+```
+
+- `atheory`
+
+```csharp
+[Theory]
+public async Task MyTheory()
+{
+
+}
+```
+
 ## Release Note
+- v.1.3.0
+ - Add `afact` and `atheory` snippets to insert "async Task ..." methods.
 - v.1.2.0
  - Add `theory` and `xtestc` snippets.
 - v.1.1.0
