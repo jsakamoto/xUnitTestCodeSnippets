@@ -6,6 +6,8 @@ This is "code snippets" for Microsoft Visual Studio 2012 or higher.
 
 If you use these "code snippets", you can save time to coding/typing to create unit test code based on xUnit framework.
 
+![introduce movie](https://raw.githubusercontent.com/jsakamoto/xUnitTestCodeSnippets/master/.assets/movie-001.gif)
+
 ## How to install
 
 1. Download "xUnitTestCodeSnippets... .vsix" (Microsoft Visual Studio Extension) file from "Visual Studio Gallery" site.  
