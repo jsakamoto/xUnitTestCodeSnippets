@@ -101,3 +101,8 @@ public async Task MyTheory()
  - Add `fact` snippet.
 - v.1.0.0
  - 1st release, it contains `xtestm` snippet.
+
+
+## License
+
+[GNU GPL v.3](LICENSE.txt)
