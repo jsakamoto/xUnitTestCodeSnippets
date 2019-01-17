@@ -33,12 +33,24 @@ public void MyTestMethod()
 }
 ```
 
+#### with Display Name
+
+- `dfact` [Tab]
+
+```csharp
+[Fact(DisplayName = "")]
+public void MyTestMethod()
+{
+
+}
+```
+
 ### Insert xUnit Theory
 
 And you can also insert **xUnit Theory method**.  
 if you type following keys,
 
-`theory`
+- `theory` [Tab]
 
 Then, this snippet expanded following C# code.
 
@@ -50,12 +62,24 @@ public void MyTheory()
 }
 ```
 
+#### with Display Name
+
+- `dtheory` [Tab]
+
+```csharp
+[Theory(DisplayName = "")]
+public void MyTheory()
+{
+
+}
+```
+
 ### Insert xUnit Test Class
 
 And you can also insert **xUnit test class**.  
 if you type following keys,
 
-`xtestc`
+- `xtestc` [Tab]
 
 Then, this snippet expanded following C# code.
 
@@ -82,6 +106,16 @@ public async Task MyTestFact()
 }
 ```
 
+- `dafact`
+
+```csharp
+[Fact(DisplayName = "")]
+public async Task MyTestFact()
+{
+
+}
+```
+
 - `atheory`
 
 ```csharp
@@ -92,7 +126,20 @@ public async Task MyTheory()
 }
 ```
 
+- `datheory`
+
+```csharp
+[Theory(DisplayName = "")]
+public async Task MyTheory()
+{
+
+}
+```
+
 ## Release Note
+- v.1.4.0
+ - Add suuport for Visual Studio 2019.
+ - Snippets with "DisplayName" are added (`dfact`, `dafact`, `dtheory`, `datheory`).
 - v.1.3.0
  - Add `afact` and `atheory` snippets to insert "async Task ..." methods.
 - v.1.2.0

@@ -107,6 +107,44 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
+      <Title>xUnit Fact with DisplayName</Title>
+      <Shortcut>dfact</Shortcut>
+      <Description>Code snippet for an xUnit test fact with display name</Description>
+      <Author>J.Sakamoto</Author>
+    </Header>
+    <Snippet>
+      <Imports>
+        <Import>
+          <Namespace>Xunit</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>displayname</ID>
+          <ToolTip>Replace with the display name of the fact method</ToolTip>
+          <Default></Default>
+        </Literal>
+        <Literal>
+          <ID>name</ID>
+          <ToolTip>Replace with the name of the fact method</ToolTip>
+          <Default>MyTestMethod</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp">
+        <![CDATA[[Fact(DisplayName = "$displayname$")]
+      public void $name$()
+      {
+          $end$
+      }]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
       <Title>xUnit Asynchronous Fact</Title>
       <Shortcut>afact</Shortcut>
       <Description>Code snippet for an asynchronous xUnit test fact</Description>
@@ -136,6 +174,45 @@
     </Snippet>
   </CodeSnippet>
   
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>xUnit Asynchronous Fact with DisplayName</Title>
+      <Shortcut>dafact</Shortcut>
+      <Description>Code snippet for an asynchronous xUnit test fact with display name</Description>
+      <Author>Nate Barbettini, J.Sakamoto</Author>
+    </Header>
+    <Snippet>
+      <Imports>
+        <Import>
+          <Namespace>System.Threading.Tasks</Namespace>
+          <Namespace>Xunit</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>displayname</ID>
+          <ToolTip>Replace with the display name of the fact method</ToolTip>
+          <Default></Default>
+        </Literal>
+        <Literal>
+          <ID>name</ID>
+          <ToolTip>Replace with the name of the fact method</ToolTip>
+          <Default>MyTestMethodAsync</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp">
+        <![CDATA[[Fact(DisplayName = "$displayname$")]
+      public async Task $name$()
+      {
+          $end$
+      }]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+
   <CodeSnippet Format="1.0.0">
     <Header>
       <SnippetTypes>
@@ -174,6 +251,44 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
+      <Title>xUnit Theory with DisplayName</Title>
+      <Shortcut>dtheory</Shortcut>
+      <Description>Code snippet for an xUnit test theory with display name</Description>
+      <Author>Nate Barbettini, J.Sakamoto</Author>
+    </Header>
+    <Snippet>
+      <Imports>
+        <Import>
+          <Namespace>Xunit</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>displayname</ID>
+          <ToolTip>Replace with the display name of the theory</ToolTip>
+          <Default></Default>
+        </Literal>
+        <Literal>
+          <ID>name</ID>
+          <ToolTip>Replace with the name of the theory</ToolTip>
+          <Default>MyTheory</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp">
+        <![CDATA[[Theory(DisplayName = "$displayname$")]
+      public void $name$()
+      {
+          $end$
+      }]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
       <Title>xUnit Asynchronous Theory</Title>
       <Shortcut>atheory</Shortcut>
       <Description>Code snippet for an asynchronous xUnit test theory</Description>
@@ -202,4 +317,44 @@
       </Code>
     </Snippet>
   </CodeSnippet>
+
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>xUnit Asynchronous Theory with DisplayName</Title>
+      <Shortcut>datheory</Shortcut>
+      <Description>Code snippet for an asynchronous xUnit test theory with display name</Description>
+      <Author>Nate Barbettini</Author>
+    </Header>
+    <Snippet>
+      <Imports>
+        <Import>
+          <Namespace>System.Threading.Tasks</Namespace>
+          <Namespace>Xunit</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>displayname</ID>
+          <ToolTip>Replace with the display name of the theory</ToolTip>
+          <Default></Default>
+        </Literal>
+        <Literal>
+          <ID>name</ID>
+          <ToolTip>Replace with the name of the theory</ToolTip>
+          <Default>MyTheoryAsync</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp">
+        <![CDATA[[Theory(DisplayName = "$displayname$")]
+      public async Task $name$()
+      {
+          $end$
+      }]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+
 </CodeSnippets>
