@@ -139,17 +139,19 @@ public async Task MyTheory()
 ```
 
 ## Release Note
+- v.1.4.1
+  - Fix: Cannot install on latest VS 2019 (16.1)
 - v.1.4.0
- - Add suuport for Visual Studio 2019.
- - Snippets with "DisplayName" are added (`dfact`, `dafact`, `dtheory`, `datheory`).
+  - Add suuport for Visual Studio 2019.
+  - Snippets with "DisplayName" are added (`dfact`, `dafact`, `dtheory`, `datheory`).
 - v.1.3.0
- - Add `afact` and `atheory` snippets to insert "async Task ..." methods.
+  - Add `afact` and `atheory` snippets to insert "async Task ..." methods.
 - v.1.2.0
- - Add `theory` and `xtestc` snippets.
+  - Add `theory` and `xtestc` snippets.
 - v.1.1.0
- - Add `fact` snippet.
+  - Add `fact` snippet.
 - v.1.0.0
- - 1st release, it contains `xtestm` snippet.
+  - 1st release, it contains `xtestm` snippet.
 
 
 ## License
