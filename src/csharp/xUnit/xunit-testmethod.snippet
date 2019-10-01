@@ -18,18 +18,28 @@
       </Imports>
       <Declarations>
         <Literal>
-          <ID>name</ID>
+          <ID>className</ID>
           <ToolTip>Replace with the name of the test class</ToolTip>
           <Default>MyTestClass</Default>
         </Literal>
+        <Literal>
+          <ID>methodName</ID>
+          <ToolTip>Replace with the name of the test method</ToolTip>
+          <Default>MyTestMethod</Default>
+        </Literal>
+        <Literal>
+          <ID>content</ID>
+          <ToolTip>Replace with the content of the test method</ToolTip>
+          <Default>throw new NotImplementedException();</Default>
+        </Literal>
       </Declarations>
       <Code Language="csharp">
-        <![CDATA[public class $name$
+        <![CDATA[public class $className$
         {
           [Fact]
-          public void MyTestFact()
+          public void $methodName$()
           {
-              $end$
+              $content$$end$
           }
         }]]>
       </Code>
@@ -58,12 +68,17 @@
           <ToolTip>Replace with the name of the test method</ToolTip>
           <Default>MyTestMethod</Default>
         </Literal>
+        <Literal>
+          <ID>content</ID>
+          <ToolTip>Replace with the content of the test method</ToolTip>
+          <Default>throw new NotImplementedException();</Default>
+        </Literal>
       </Declarations>
       <Code Language="csharp">
         <![CDATA[[Fact]
       public void $name$()
       {
-          $end$
+          $content$$end$
       }]]>
       </Code>
     </Snippet>
@@ -91,12 +106,17 @@
           <ToolTip>Replace with the name of the fact method</ToolTip>
           <Default>MyTestMethod</Default>
         </Literal>
+        <Literal>
+          <ID>content</ID>
+          <ToolTip>Replace with the content of the test method</ToolTip>
+          <Default>throw new NotImplementedException();</Default>
+        </Literal>
       </Declarations>
       <Code Language="csharp">
         <![CDATA[[Fact]
       public void $name$()
       {
-          $end$
+          $content$$end$
       }]]>
       </Code>
     </Snippet>
@@ -129,12 +149,17 @@
           <ToolTip>Replace with the name of the fact method</ToolTip>
           <Default>MyTestMethod</Default>
         </Literal>
+        <Literal>
+          <ID>content</ID>
+          <ToolTip>Replace with the content of the test method</ToolTip>
+          <Default>throw new NotImplementedException();</Default>
+        </Literal>
       </Declarations>
       <Code Language="csharp">
         <![CDATA[[Fact(DisplayName = "$displayname$")]
       public void $name$()
       {
-          $end$
+          $content$$end$
       }]]>
       </Code>
     </Snippet>
@@ -163,12 +188,17 @@
           <ToolTip>Replace with the name of the fact method</ToolTip>
           <Default>MyTestMethodAsync</Default>
         </Literal>
+        <Literal>
+          <ID>content</ID>
+          <ToolTip>Replace with the content of the test method</ToolTip>
+          <Default>throw new NotImplementedException();</Default>
+        </Literal>
       </Declarations>
       <Code Language="csharp">
         <![CDATA[[Fact]
       public async Task $name$()
       {
-          $end$
+          $content$$end$
       }]]>
       </Code>
     </Snippet>
@@ -202,12 +232,17 @@
           <ToolTip>Replace with the name of the fact method</ToolTip>
           <Default>MyTestMethodAsync</Default>
         </Literal>
+        <Literal>
+          <ID>content</ID>
+          <ToolTip>Replace with the content of the test method</ToolTip>
+          <Default>throw new NotImplementedException();</Default>
+        </Literal>
       </Declarations>
       <Code Language="csharp">
         <![CDATA[[Fact(DisplayName = "$displayname$")]
       public async Task $name$()
       {
-          $end$
+          $content$$end$
       }]]>
       </Code>
     </Snippet>
@@ -235,12 +270,17 @@
           <ToolTip>Replace with the name of the theory</ToolTip>
           <Default>MyTheory</Default>
         </Literal>
+        <Literal>
+          <ID>content</ID>
+          <ToolTip>Replace with the content of the test method</ToolTip>
+          <Default>throw new NotImplementedException();</Default>
+        </Literal>
       </Declarations>
       <Code Language="csharp">
         <![CDATA[[Theory]
       public void $name$()
       {
-          $end$
+          $content$$end$
       }]]>
       </Code>
     </Snippet>
@@ -273,12 +313,17 @@
           <ToolTip>Replace with the name of the theory</ToolTip>
           <Default>MyTheory</Default>
         </Literal>
+        <Literal>
+          <ID>content</ID>
+          <ToolTip>Replace with the content of the test method</ToolTip>
+          <Default>throw new NotImplementedException();</Default>
+        </Literal>
       </Declarations>
       <Code Language="csharp">
         <![CDATA[[Theory(DisplayName = "$displayname$")]
       public void $name$()
       {
-          $end$
+          $content$$end$
       }]]>
       </Code>
     </Snippet>
@@ -307,12 +352,17 @@
           <ToolTip>Replace with the name of the theory</ToolTip>
           <Default>MyTheoryAsync</Default>
         </Literal>
+        <Literal>
+          <ID>content</ID>
+          <ToolTip>Replace with the content of the test method</ToolTip>
+          <Default>throw new NotImplementedException();</Default>
+        </Literal>
       </Declarations>
       <Code Language="csharp">
         <![CDATA[[Theory]
       public async Task $name$()
       {
-          $end$
+          $content$$end$
       }]]>
       </Code>
     </Snippet>
@@ -346,12 +396,17 @@
           <ToolTip>Replace with the name of the theory</ToolTip>
           <Default>MyTheoryAsync</Default>
         </Literal>
+        <Literal>
+          <ID>content</ID>
+          <ToolTip>Replace with the content of the test method</ToolTip>
+          <Default>throw new NotImplementedException();</Default>
+        </Literal>
       </Declarations>
       <Code Language="csharp">
         <![CDATA[[Theory(DisplayName = "$displayname$")]
       public async Task $name$()
       {
-          $end$
+          $content$$end$
       }]]>
       </Code>
     </Snippet>
