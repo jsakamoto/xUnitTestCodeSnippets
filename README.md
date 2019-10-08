@@ -31,7 +31,7 @@ Then, this snippet expanded following C# code.
 [Fact]
 public void MyTestMethod()
 {
-
+    throw new NotImplementedException();
 }
 ```
 
@@ -43,7 +43,7 @@ public void MyTestMethod()
 [Fact(DisplayName = "")]
 public void MyTestMethod()
 {
-
+    throw new NotImplementedException();
 }
 ```
 
@@ -60,7 +60,7 @@ Then, this snippet expanded following C# code.
 [Theory]
 public void MyTheory()
 {
-
+    throw new NotImplementedException();
 }
 ```
 
@@ -72,7 +72,7 @@ public void MyTheory()
 [Theory(DisplayName = "")]
 public void MyTheory()
 {
-
+    throw new NotImplementedException();
 }
 ```
 
@@ -91,7 +91,7 @@ public class MyTestClass
     [Fact]
     public void MyTestFact()
     {
-
+        throw new NotImplementedException();
     }
 }
 ```
@@ -104,7 +104,7 @@ public class MyTestClass
 [Fact]
 public async Task MyTestFact()
 {
-
+    throw new NotImplementedException();
 }
 ```
 
@@ -114,7 +114,7 @@ public async Task MyTestFact()
 [Fact(DisplayName = "")]
 public async Task MyTestFact()
 {
-
+    throw new NotImplementedException();
 }
 ```
 
@@ -124,7 +124,7 @@ public async Task MyTestFact()
 [Theory]
 public async Task MyTheory()
 {
-
+    throw new NotImplementedException();
 }
 ```
 
@@ -134,11 +134,14 @@ public async Task MyTheory()
 [Theory(DisplayName = "")]
 public async Task MyTheory()
 {
-
+    throw new NotImplementedException();
 }
 ```
 
 ## Release Note
+
+- v.1.5.0
+  - Throw NotImplementedException by default.
 - v.1.4.1
   - Fix: Cannot install on latest VS 2019 (16.1)
 - v.1.4.0
