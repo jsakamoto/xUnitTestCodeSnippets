@@ -9,7 +9,7 @@
                 "isDefault": true
             },
             "label": "build",
-            "type": "shell",
+            "type": "process",
             "command": "cmd.exe",
             "args": [
                 "/c",
