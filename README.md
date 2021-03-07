@@ -140,6 +140,10 @@ public async Task MyTheory()
 
 ## Release Note
 
+- v.1.5.1.2
+  - Fix: Removed the unused "NET Framework 4 targeting pack" requirement from the manifest.
+- v.1.5.1.1
+  - Fix: required name spaces are missing.
 - v.1.5.0
   - Throw NotImplementedException by default.
 - v.1.4.1
