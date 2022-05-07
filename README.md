@@ -138,8 +138,35 @@ public async Task MyTheory()
 }
 ```
 
+### Insert xUnit Test Data Class or Member
+
+- `xcdata`
+
+```csharp
+public class MyTestDataClass : IEnumerable<object[]>
+{
+    public IEnumerator<object[]> GetEnumerator()
+    {
+        yield return new object[] { };
+    }
+
+    IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
+}
+
+```
+
+- `xmdata`
+
+```csharp
+public static IEnumerable<object[]> MyTestData => new object[][] {
+    new object[]{ },
+};
+```
+
 ## Release Note
 
+- v.1.6.0
+  - Snippets for test data class and member are added (`xcdata`, `xmdata`).
 - v.1.5.1.2
   - Fix: Removed the unused "NET Framework 4 targeting pack" requirement from the manifest.
 - v.1.5.1.1

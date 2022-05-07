@@ -48,7 +48,7 @@
       </Code>
     </Snippet>
   </CodeSnippet>
-  
+
   <CodeSnippet Format="1.0.0">
     <Header>
       <SnippetTypes>
@@ -89,7 +89,7 @@
       </Code>
     </Snippet>
   </CodeSnippet>
-  
+
   <CodeSnippet Format="1.0.0">
     <Header>
       <SnippetTypes>
@@ -130,7 +130,7 @@
       </Code>
     </Snippet>
   </CodeSnippet>
-  
+
   <CodeSnippet Format="1.0.0">
     <Header>
       <SnippetTypes>
@@ -220,7 +220,7 @@
       </Code>
     </Snippet>
   </CodeSnippet>
-  
+
   <CodeSnippet Format="1.0.0">
     <Header>
       <SnippetTypes>
@@ -310,7 +310,7 @@
       </Code>
     </Snippet>
   </CodeSnippet>
-  
+
   <CodeSnippet Format="1.0.0">
     <Header>
       <SnippetTypes>
@@ -446,6 +446,77 @@
       {
           $content$$end$
       }]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>xUnit Test Data Class</Title>
+      <Shortcut>xcdata</Shortcut>
+      <Description>Code snippet for a test data class referenced from xUnit test theories</Description>
+      <Author>J.Sakamoto</Author>
+    </Header>
+    <Snippet>
+      <Imports>
+        <Import>
+          <Namespace>System.Collections</Namespace>
+        </Import>
+        <Import>
+          <Namespace>System.Collections.Generic</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>className</ID>
+          <ToolTip>Replace with the name of the test data class</ToolTip>
+          <Default>MyTestDataClass</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp">
+        <![CDATA[public class $className$ : IEnumerable<object[]>
+        {
+            public IEnumerator<object[]> GetEnumerator()
+            {
+                yield return new object[] { $end$ };
+            }
+
+            IEnumerator IEnumerable.GetEnumerator() =>  GetEnumerator();
+        }]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>xUnit Test Data Member</Title>
+      <Shortcut>xmdata</Shortcut>
+      <Description>Code snippet for a test data member referenced from xUnit test theories</Description>
+      <Author>J.Sakamoto</Author>
+    </Header>
+    <Snippet>
+      <Imports>
+        <Import>
+          <Namespace>System.Collections.Generic</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>memberName</ID>
+          <ToolTip>Replace with the name of the test data member</ToolTip>
+          <Default>MyTestData</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp">
+        <![CDATA[public static IEnumerable<object[]> $memberName$ => new object [][] {
+            new object[] { $end$ },
+        };]]>
       </Code>
     </Snippet>
   </CodeSnippet>
